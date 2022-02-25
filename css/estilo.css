@@ -394,6 +394,9 @@ footer {
 	color: #5a1d91;
 	font-weight: bold;
 }
+.footer--gradiente {
+	background-image: linear-gradient(#26134F, #D6C7DD);
+}
 /* medias queries de footer de todas las páginas*/
 /* vista mobile*/
 @media only screen and (min-width:360px) and (max-width:767px){

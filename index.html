@@ -5,12 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Proyecto</title>
 	<link rel="shortcut icon" href="assets/img/favicon.png">
+	<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	<link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
 	<div class="contenedor-mayor">
 		<header>
-			<div class="header--text">
+			<div class="header--text wow animate__animated animate__fadeInDown">
 				<img src="assets/img/logo_bts.jpg">
 				<img src="assets/img/logo_txt.png">
 				<img src="assets/img/logo_kard.png">
@@ -31,11 +33,13 @@
 			</nav>
 		</header>
 		<main>
-			<h2><span class="main__bienvenido--texto">BIENVENIDOS</span></h2>
+			<h2 class="wow animate__animated animate__flipInX"><span class="main__bienvenido--texto">BIENVENIDOS</span></h2>
 			<div>
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/MBdVXkSdhwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
-			<h2><span class="main__titulos--texto">NUEVOS PRODUCTOS</span></h2>
+			<div class="wow animate__animated animate__pulse">
+				<h2><span class="main__titulos--texto">NUEVOS PRODUCTOS</span></h2>
+			</div>
 			<div>
 				<table class="tabla">
 					<tr class="columnFlex">
@@ -45,7 +49,9 @@
 					</tr>
 				</table>
 			</div>
-			<h2><span class="main__titulos--texto">PRODUCTOS MÁS VISTOS</span></h2>
+			<div class="wow animate__animated animate__pulse">
+				<h2><span class="main__titulos--texto">PRODUCTOS MÁS VISTOS</span></h2>
+			</div>
 			<div>
 				<table class="tabla">
 					<tr class="columnFlex">
@@ -61,12 +67,16 @@
 		</main>
 		<footer>
 			<hr>
-			<div class="footer--align footer--text">
-				<img class="footer__imagen--height" src="assets/img/heart.jpg"> 
+			<div class="footer--align footer--text footer--gradiente">
+				<img class="footer__imagen--height" src="assets/img/heart.png"> 
 				REDES SOCIALES - UBICACIÓN - PROMOCIONES BANCARIAS
-				<img class="footer__imagen--height" src="assets/img/heart.jpg">	
+				<img class="footer__imagen--height" src="assets/img/heart.png">	
 			</div>
 		</footer>
 	</div>
+	<script src="js/wow.min.js"></script>
+    <script>
+		new WOW().init();
+    </script>
 </body>
 </html>
